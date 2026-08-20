@@ -22,4 +22,11 @@ with col1:
 
 with col2:
   sl.subheader("Also this one!")
+  mode = sl.radio("What do you wanna do after giving up?", ("Pick up something else.", "Give up some more.", "Die."))
+  if mode == "Pick up something else.":
+    sl.write("I should probably do that too.")
+  if mode == "Give up some more.":
+    sl.write("That is so based.")
+  if mode == "Die.":
+    sl.write("Maybe don't...")
   
