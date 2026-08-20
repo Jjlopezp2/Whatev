@@ -29,4 +29,9 @@ with col2:
     sl.write("That is so based.")
   if mode == "Die.":
     sl.write("Maybe don't...")
-  
+
+sl.subheader("Here's a wonderful button:")
+if sl.button("Press this button to officially give up!"):
+  sl.write("Congrats! You've now given up!")
+else:
+  sl.write("C'mooooon I know you wanna give up!")
